@@ -31,7 +31,7 @@ https://github.com/CyberSecAI/cve_info/blob/main/2020/3xxx/CVE-2020-3118.json
 }
 ````
 
-## Example: CVE-2020-9054
+## Example: CVE-2024-4610
 https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
 
 
