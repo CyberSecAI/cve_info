@@ -1,0 +1,179 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "CVE Entry Schema",
+    "description": "Schema for CVE entries with technical impacts and keyphrases",
+    "required": [
+        "cveId",
+        "version",
+        "timestamp",
+        "description",
+        "keyphrases",
+        "mitreTechnicalImpacts"
+    ],
+    "properties": {
+        "cveId": {
+            "type": "string",
+            "pattern": "^CVE-\\d{4}-\\d+$",
+            "description": "The CVE identifier in format CVE-YYYY-NNNN"
+        },
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "description": "Semantic version number"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 timestamp of when the entry was created"
+        },
+        "description": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Full description of the vulnerability"
+        },
+        "keyphrases": {
+            "type": "object",
+            "description": "Key phrases extracted from the vulnerability description",
+            "required": [
+                "rootcause",
+                "weakness",
+                "impact",
+                "vector",
+                "attacker",
+                "product",
+                "version",
+                "component"
+            ],
+            "properties": {
+                "rootcause": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "uniqueItems": true
+                        }
+                    ],
+                    "description": "The root cause(s) of the vulnerability"
+                },
+                "weakness": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "uniqueItems": true
+                        }
+                    ],
+                    "description": "The weakness(es) or vulnerability type(s)"
+                },
+                "impact": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "uniqueItems": true
+                        }
+                    ],
+                    "description": "The impact(s) of exploiting the vulnerability"
+                },
+                "vector": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "uniqueItems": true
+                        }
+                    ],
+                    "description": "The attack vector(s) or method(s) of exploitation"
+                },
+                "attacker": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "uniqueItems": true
+                        }
+                    ],
+                    "description": "The type(s) of attacker who can exploit the vulnerability"
+                },
+                "product": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "description": "The affected product name(s)"
+                },
+                "version": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "description": "The affected product version(s)"
+                },
+                "component": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "description": "The specific component(s) affected"
+                }
+            },
+            "additionalProperties": false
+        },
+        "mitreTechnicalImpacts": {
+            "type": "array",
+            "description": "List of MITRE technical impact classifications",
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    },
+    "additionalProperties": false
+}
