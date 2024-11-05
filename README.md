@@ -5,11 +5,16 @@ For a given CVE Description, the following is available in the json file for tha
 2. keyphrases: Vulnerability Key Phrases per https://www.cve.org/Resources/General/Key-Details-Phrasing.pdf
 3. mitre_technical_impacts: The Impact(s) mapped to MITRE Technical Impacts per https://cwe.mitre.org/community/swa/priority.html 
 
+The files conform to the schema in file cve_schema_x.x.x.json.
+
 
 ## Example: CVE-2020-3118
 https://github.com/CyberSecAI/cve_info/blob/main/2020/3xxx/CVE-2020-3118.json
 ````
 {
+    "cveId": "CVE-2020-3118",
+    "version": "1.0.0",
+    "timestamp": "2024-11-03T18:37:50.907685+00:00",
     "description": "A vulnerability in the Cisco Discovery Protocol implementation for Cisco IOS XR Software could allow an unauthenticated, adjacent attacker to execute arbitrary code or cause a reload on an affected device. The vulnerability is due to improper validation of string input from certain fields in Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. A successful exploit could allow the attacker to cause a stack overflow, which could allow the attacker to execute arbitrary code with administrative privileges on an affected device. Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent).",
     "keyphrases": {
         "rootcause": "improper validation of string input",
@@ -24,9 +29,10 @@ https://github.com/CyberSecAI/cve_info/blob/main/2020/3xxx/CVE-2020-3118.json
         "version": "",
         "component": "Cisco Discovery Protocol implementation"
     },
-    "mitre_technical_impacts": [
-        "Execute unauthorized code or commands",
-        "Modify data"
+    "mitreTechnicalImpacts": [
+        "Denial-of-Service: resource consumption",
+        "Denial-of-Service: unreliable execution",
+        "Execute unauthorized code or commands"
     ]
 }
 ````
@@ -37,6 +43,9 @@ https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
 
 ````
 {
+    "cveId": "CVE-2024-4610",
+    "version": "1.0.0",
+    "timestamp": "2024-11-03T18:37:50.907685+00:00",
     "description": "Use After Free vulnerability in Arm Ltd Bifrost GPU Kernel Driver, Arm Ltd Valhall GPU Kernel Driver allows a local non-privileged user to make improper GPU memory processing operations to gain access to already freed memory.This issue affects Bifrost GPU Kernel Driver: from r34p0 through r40p0; Valhall GPU Kernel Driver: from r34p0 through r40p0.",
     "keyphrases": {
         "rootcause": "use after free",
@@ -54,9 +63,9 @@ https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
         ],
         "component": ""
     },
-    "mitre_technical_impacts": [
-        "Execute unauthorized code or commands",
-        "Bypass protection mechanism"
+    "mitreTechnicalImpacts": [
+        "Bypass protection mechanism",
+        "Read data"
     ]
 }
 ````
