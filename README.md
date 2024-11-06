@@ -78,3 +78,7 @@ CVE files are allocated to directories by year per
 2. https://github.com/CVEProject/cvelistV5/tree/main/cves
 
 This avoids having MANY files in one directory making it harder to browse through.
+
+## License
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+- https://creativecommons.org/licenses/by-sa/4.0/
