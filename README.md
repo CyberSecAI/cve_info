@@ -76,6 +76,7 @@ https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
 CVE files are allocated to directories by year per
 1. https://github.com/cisagov/vulnrichment
 2. https://github.com/CVEProject/cvelistV5/tree/main/cves
+3. https://github.com/CloudSecurityAlliance/gsd-database/tree/main
 
 This avoids having MANY files in one directory making it harder to browse through.
 
