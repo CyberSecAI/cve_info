@@ -9,7 +9,6 @@
         "timestamp",
         "description",
         "keyphrases",
-        "mitreTechnicalImpacts"
     ],
     "properties": {
         "cveId": {
