@@ -3,12 +3,17 @@
 For a given CVE Description, the following is available in the json file for that CVE:
 1. description: original CVE Description
 2. keyphrases: Vulnerability Key Phrases per https://www.cve.org/Resources/General/Key-Details-Phrasing.pdf
-3. mitre_technical_impacts: The Impact(s) mapped to MITRE Technical Impacts per https://cwe.mitre.org/community/swa/priority.html 
-
-The files conform to the schema in file cve_schema_x.x.x.json.
+3. Optional: mitre_technical_impacts: The Impact(s) mapped to MITRE Technical Impacts per https://cwe.mitre.org/community/swa/priority.html 
 
 
-## Example: CVE-2020-3118
+## License
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+- https://creativecommons.org/licenses/by-sa/4.0/
+
+
+## Examples
+
+### Example: CVE-2020-3118
 https://github.com/CyberSecAI/cve_info/blob/main/2020/3xxx/CVE-2020-3118.json
 ````
 {
@@ -37,7 +42,7 @@ https://github.com/CyberSecAI/cve_info/blob/main/2020/3xxx/CVE-2020-3118.json
 }
 ````
 
-## Example: CVE-2024-4610
+### Example: CVE-2024-4610
 https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
 
 
@@ -71,6 +76,13 @@ https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
 ````
 
 
+## CVE Populations
+
+There are ~55K CVEs here across these populations:
+1. CISA KEV ~1.5K
+2. MITRE Top 25 ~7K
+3. CISA Vulnrichment ~46.5 K
+
 
 ## Files
 CVE files are allocated to directories by year per
@@ -80,6 +92,8 @@ CVE files are allocated to directories by year per
 
 This avoids having MANY files in one directory making it harder to browse through.
 
-## License
-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-- https://creativecommons.org/licenses/by-sa/4.0/
+
+
+## Schema
+
+The files conform to the schema in file cve_schema_x.x.x.json.
