@@ -75,6 +75,37 @@ https://github.com/CyberSecAI/cve_info/blob/main/2024/4xxx/CVE-2024-4610.json
 }
 ````
 
+### Example: CVE-2015-0310
+https://github.com/CyberSecAI/cve_info/blob/main/2015/0xxx/CVE-2015-0310.json
+
+````
+{
+    "cveId": "CVE-2015-0310",
+    "version": "1.0.0",
+    "timestamp": "2024-11-03T18:37:50.907685+00:00",
+    "description": "Adobe Flash Player before 13.0.0.262 and 14.x through 16.x before 16.0.0.287 on Windows and OS X and before 11.2.202.438 on Linux does not properly restrict discovery of memory addresses, which allows attackers to bypass the ASLR protection mechanism on Windows, and have an unspecified impact on other platforms, via unknown vectors, as exploited in the wild in January 2015.",
+    "keyphrases": {
+        "rootcause": "does not properly restrict discovery of memory addresses",
+        "weakness": "",
+        "impact": [
+            "bypass ASLR protection mechanism",
+            "unspecified impact"
+        ],
+        "vector": "unknown vectors",
+        "attacker": "attackers",
+        "product": "Adobe Flash Player",
+        "version": [
+            "before 13.0.0.262 and 14.x through 16.x before 16.0.0.287 on Windows and OS X",
+            "before 11.2.202.438 on Linux"
+        ],
+        "component": ""
+    },
+    "mitreTechnicalImpacts": [
+        "Bypass protection mechanism"
+    ]
+}
+````
+
 
 ## CVE Populations
 
