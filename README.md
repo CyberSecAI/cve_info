@@ -109,7 +109,7 @@ https://github.com/CyberSecAI/cve_info/blob/main/2015/0xxx/CVE-2015-0310.json
 
 ## CVE Populations
 
-There are ~55K CVEs here across these populations:
+There are ~155K CVEs here including these populations:
 1. CISA KEV ~1.5K
 2. MITRE Top 25 ~7K
 3. CISA Vulnrichment ~46.5 K
