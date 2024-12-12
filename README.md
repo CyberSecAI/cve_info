@@ -7,8 +7,10 @@ For a given CVE Description, the following is available in the json file for tha
 
 
 ## License
-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-- https://creativecommons.org/licenses/by-sa/4.0/
+
+> [!NOTE]  
+>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+> - https://creativecommons.org/licenses/by-sa/4.0/
 
 
 ## Examples
