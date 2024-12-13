@@ -8,7 +8,7 @@
         "version",
         "timestamp",
         "description",
-        "keyphrases",
+        "keyphrases"
     ],
     "properties": {
         "cveId": {
