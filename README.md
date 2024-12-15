@@ -14,6 +14,28 @@ For **242,898** CVEs, for a given CVE Description, the following is available in
 
 ## Examples
 
+### Example: CVE-2022-40651
+https://github.com/CyberSecAI/cve_info/blob/main/2022/40xxx/CVE-2022-40651.json
+````
+{
+    "cveId": "CVE-2022-40651",
+    "version": "1.0.0",
+    "timestamp": "2024-12-15T20:24:27.876763+00:00",
+    "description": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ansys SpaceClaim 2022 R1. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of X_B files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-17844.",
+    "keyphrases": {
+        "rootcause": "lack of proper validation of user-supplied data",
+        "weakness": "write past the end of an allocated data structure",
+        "impact": "execute arbitrary code",
+        "vector": "malicious page or file",
+        "attacker": "remote attackers",
+        "product": "Ansys SpaceClaim",
+        "version": "2022 R1",
+        "component": "parsing of X_B files"
+    }
+}
+````
+
+
 ### Example: CVE-2020-3118
 https://github.com/CyberSecAI/cve_info/blob/main/2020/3xxx/CVE-2020-3118.json
 ````
