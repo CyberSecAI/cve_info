@@ -1,10 +1,9 @@
 # Overview
 
-For a given CVE Description, the following is available in the json file for that CVE:
+For **242,898 **CVEs, for a given CVE Description, the following is available in the json file for that CVE:
 1. description: original CVE Description
 2. keyphrases: Vulnerability Key Phrases per https://www.cve.org/Resources/General/Key-Details-Phrasing.pdf
 3. Optional: mitre_technical_impacts: The Impact(s) mapped to MITRE Technical Impacts per https://cwe.mitre.org/community/swa/priority.html 
-
 
 ## License
 
@@ -109,14 +108,6 @@ https://github.com/CyberSecAI/cve_info/blob/main/2015/0xxx/CVE-2015-0310.json
 ````
 
 
-## CVE Populations
-
-There are ~180K CVEs here including these populations:
-1. CISA KEV ~1.5K
-2. MITRE Top 25 ~7K
-3. CISA Vulnrichment ~46.5 K
-
-
 ## Files
 CVE files are allocated to directories by year per
 1. https://github.com/cisagov/vulnrichment
@@ -124,7 +115,6 @@ CVE files are allocated to directories by year per
 3. https://github.com/CloudSecurityAlliance/gsd-database/tree/main
 
 This avoids having MANY files in one directory making it harder to browse through.
-
 
 
 ## Schema
