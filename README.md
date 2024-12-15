@@ -5,6 +5,10 @@ For **242,898** CVEs, for a given CVE Description, the following is available in
 2. keyphrases: Vulnerability Key Phrases per https://www.cve.org/Resources/General/Key-Details-Phrasing.pdf
 3. Optional: mitre_technical_impacts: The Impact(s) mapped to MITRE Technical Impacts per https://cwe.mitre.org/community/swa/priority.html 
 
+<p align="center">
+<img src="./images/keyphrase_extract.jpg" width=50% height=50%>
+<p>
+
 ## License
 
 > [!NOTE]  
