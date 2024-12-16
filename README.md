@@ -3,6 +3,7 @@
 For **242,898** CVEs, for a given CVE Description, the following is available in the json file for that CVE:
 1. description: original CVE Description
 2. keyphrases: Vulnerability Key Phrases per https://www.cve.org/Resources/General/Key-Details-Phrasing.pdf
+   1. https://cwe.mitre.org/documents/cwe_usage/guidance.html provides guidance on the usage of these keyphrases.
 3. Optional: mitre_technical_impacts: The Impact(s) mapped to MITRE Technical Impacts per https://cwe.mitre.org/community/swa/priority.html 
 
 <p align="center">
@@ -146,3 +147,5 @@ This avoids having MANY files in one directory making it harder to browse throug
 ## Schema
 
 The files conform to the schema in file cve_schema_x.x.x.json.
+
+
