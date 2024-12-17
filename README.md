@@ -1,6 +1,6 @@
 # Overview
 
-For **242,898** CVEs, for a given CVE Description, the following is available in the json file for that CVE:
+For **257,413** CVEs, for a given CVE Description, the following is available in the json file for that CVE:
 1. description: original CVE Description
 2. keyphrases: Vulnerability Key Phrases **extracted from the CVE Description** per https://www.cve.org/Resources/General/Key-Details-Phrasing.pdf
    1. https://cwe.mitre.org/documents/cwe_usage/guidance.html provides guidance on the usage of these keyphrases.
